@@ -1,0 +1,62 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #edc305;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#root {
+    border: 10px double white;
+    padding: 2rem;
+    background-color: #facf0f;
+}
+
+#root h1 {
+    color: white;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#cont {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+input {
+    outline: none;
+    border: none
+}
+
+input, button {
+    width: 100%;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none; /*Removes bullet point*/
+    padding-left: 0px; /*Removes bullet point indent*/
+}
+
+.white {
+    background-color: white;
+}
+
+.yellow {
+    background-color: #edc305;
+}

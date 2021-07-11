@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add new component</title>
+    <!--External CSS link-->
+    <link href="add new component.css" type="text/css" rel="stylesheet" />
+    <!--External Vue.js CDN link version 3-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--External JS link deferred-->
+    <script type="text/javascript" src="add new component.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <h1>Famous Singers</h1>
+        <p>Add your favourite singers to our list by using the box below</p>
+        <div id="cont">
+            <input type="text" v-model="newItem" v-bind:class="newItem.length > 0 ? 'white' : 'yellow'" />
+            <button v-on:click="addNewItem" v-bind:disabled="newItem.length < 1">
+                Click
+            </button>
+        </div>
+        <ul>
+            <add-singer v-for="singer in singers" v-bind:key="singer.id" v-bind:name="singer.name">
+                <!--Array items rendered here-->
+            </add-singer>
+        </ul>
+    </div>
+</body>
+</html>
